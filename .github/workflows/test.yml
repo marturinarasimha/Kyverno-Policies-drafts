@@ -68,6 +68,7 @@ jobs:
           # - ^tekton
           # - ^traefik
           # - ^velero
+          - ^windows-pod-security$
     runs-on: ubuntu-latest
     name: ${{ matrix.k8s-version.name }} - ${{ matrix.tests }}
     steps:
